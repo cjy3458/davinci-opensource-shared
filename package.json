@@ -1,30 +1,31 @@
 {
   "name": "@davinci-opensource/shared",
   "version": "0.1.0",
+  "type": "module",
   "description": "Shared constants, types, and UI components for Da Vinci project",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
   "types": "./dist/index.d.ts",
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
       "import": "./dist/index.mjs",
-      "require": "./dist/index.js",
-      "types": "./dist/index.d.ts"
+      "require": "./dist/index.js"
     },
     "./constants": {
+      "types": "./dist/constants/index.d.ts",
       "import": "./dist/constants/index.mjs",
-      "require": "./dist/constants/index.js",
-      "types": "./dist/constants/index.d.ts"
+      "require": "./dist/constants/index.js"
     },
     "./types": {
+      "types": "./dist/types/index.d.ts",
       "import": "./dist/types/index.mjs",
-      "require": "./dist/types/index.js",
-      "types": "./dist/types/index.d.ts"
+      "require": "./dist/types/index.js"
     },
     "./ui": {
+      "types": "./dist/ui/index.d.ts",
       "import": "./dist/ui/index.mjs",
-      "require": "./dist/ui/index.js",
-      "types": "./dist/ui/index.d.ts"
+      "require": "./dist/ui/index.js"
     }
   },
   "files": [
@@ -34,7 +35,9 @@
     "build": "tsup",
     "dev": "tsup --watch",
     "prepublishOnly": "pnpm build",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "storybook": "storybook dev -p 6007",
+    "build-storybook": "storybook build"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
@@ -53,12 +56,25 @@
     }
   },
   "devDependencies": {
+    "@chromatic-com/storybook": "^3.2.6",
+    "@storybook/addon-essentials": "^8.6.12",
+    "@storybook/addon-interactions": "^8.6.12",
+    "@storybook/addon-links": "^8.6.12",
+    "@storybook/blocks": "^8.6.12",
+    "@storybook/react": "^8.6.12",
+    "@storybook/react-vite": "^8.6.12",
+    "@storybook/test": "^8.6.12",
     "@types/react": "^19.0.0",
+    "autoprefixer": "^10.4.20",
+    "postcss": "^8.5.3",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
     "react-router-dom": "^7.0.0",
+    "storybook": "^8.6.12",
+    "tailwindcss": "^3.4.17",
     "tsup": "^8.0.0",
-    "typescript": "^5.7.0"
+    "typescript": "^5.7.0",
+    "vite": "^6.3.5"
   },
   "keywords": [
     "davinci",

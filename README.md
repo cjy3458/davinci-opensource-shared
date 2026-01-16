@@ -133,6 +133,34 @@ pnpm dev
 pnpm typecheck
 ```
 
+## Storybook
+
+UI 컴포넌트들을 Storybook에서 확인할 수 있습니다.
+
+```bash
+# Storybook 실행 (localhost:6006)
+pnpm storybook
+
+# Storybook 빌드
+pnpm build-storybook
+```
+
+### 컴포넌트 목록
+
+| 컴포넌트 | 설명 |
+|---------|------|
+| `CommonBtn` | 다양한 스타일의 버튼 (scribble, radius) |
+| `BaseModal` | 기본 모달 컴포넌트 |
+| `Input` | 텍스트 입력 필드 |
+| `Title` | 손글씨 스타일 타이틀 |
+| `DecorateTitle` | 물결 장식 라인 |
+| `SunDoodle` | 태양 SVG 장식 |
+| `ScribbleDoodle` | 낙서 SVG 장식 |
+| `StarDoodle` | 별 SVG 장식 |
+| `BrushDoodle` | 붓 SVG 장식 |
+| `PaletteDoodle` | 팔레트 SVG 장식 |
+| `NickDoodle` | 닉네임 SVG 장식 |
+
 ## 라이선스
 
 MIT
