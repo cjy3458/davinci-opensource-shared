@@ -1,6 +1,6 @@
 {
   "name": "@davinci-opensource/shared",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "type": "module",
   "description": "Shared constants, types, and UI components for Da Vinci project",
   "main": "./dist/index.js",
@@ -86,6 +86,6 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/davinci-opensource/shared"
+    "url": "https://github.com/cjy3458/davinci-opensource-shared"
   }
 }
