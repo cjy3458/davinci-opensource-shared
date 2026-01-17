@@ -1,12 +1,15 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import {
+  JudyDoodle,
+  LionDoodle,
+  BearDoodle,
+  NickDoodle,
   SunDoodle,
   ScribbleDoodle,
   StarDoodle,
   BrushDoodle,
   PaletteDoodle,
-  NickDoodle,
-} from './doodles';
+} from '..';
 
 const meta: Meta = {
   title: 'UI/Doodles',
@@ -40,6 +43,18 @@ const DoodleWrapper = ({
 export const AllDoodles: Story = {
   render: () => (
     <div className="p-8 grid grid-cols-2 md:grid-cols-3 gap-6">
+      <DoodleWrapper name="JudyDoodle">
+        <JudyDoodle />
+      </DoodleWrapper>
+      <DoodleWrapper name="LionDoodle">
+        <LionDoodle />
+      </DoodleWrapper>
+      <DoodleWrapper name="BearDoodle">
+        <BearDoodle />
+      </DoodleWrapper>
+      <DoodleWrapper name="NickDoodle">
+        <NickDoodle />
+      </DoodleWrapper>
       <DoodleWrapper name="SunDoodle">
         <SunDoodle />
       </DoodleWrapper>
@@ -55,10 +70,31 @@ export const AllDoodles: Story = {
       <DoodleWrapper name="PaletteDoodle">
         <PaletteDoodle />
       </DoodleWrapper>
-      <DoodleWrapper name="NickDoodle">
-        <NickDoodle />
-      </DoodleWrapper>
     </div>
+  ),
+};
+
+export const Judy: Story = {
+  render: () => (
+    <DoodleWrapper name="JudyDoodle">
+      <JudyDoodle />
+    </DoodleWrapper>
+  ),
+};
+
+export const Lion: Story = {
+  render: () => (
+    <DoodleWrapper name="LionDoodle">
+      <LionDoodle />
+    </DoodleWrapper>
+  ),
+};
+
+export const Bear: Story = {
+  render: () => (
+    <DoodleWrapper name="BearDoodle">
+      <BearDoodle />
+    </DoodleWrapper>
   ),
 };
 
@@ -114,12 +150,15 @@ export const Nick: Story = {
 export const InContext: Story = {
   render: () => (
     <div className="relative w-full h-screen bg-gradient-to-b from-blue-50 to-white overflow-hidden">
+      <JudyDoodle />
+      <LionDoodle />
+      <BearDoodle />
+      <NickDoodle />
       <SunDoodle />
       <ScribbleDoodle />
       <StarDoodle />
       <BrushDoodle />
       <PaletteDoodle />
-      <NickDoodle />
       <div className="absolute inset-0 flex items-center justify-center">
         <h1 className="font-handwriting text-6xl font-bold text-gray-800">
           Da Vinci

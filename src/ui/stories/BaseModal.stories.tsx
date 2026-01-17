@@ -1,8 +1,7 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import { useState } from 'react';
 import { MemoryRouter } from 'react-router-dom';
-import BaseModal from './BaseModal';
-import Input from './Input';
+import { BaseModal, Input } from '..';
 
 const meta: Meta<typeof BaseModal> = {
   title: 'UI/BaseModal',

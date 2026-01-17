@@ -67,13 +67,18 @@ import {
   Input,
   Title,
   DecorateTitle,
+  Toast,
+  JudyDoodle,
+  LionDoodle,
+  BearDoodle,
+  NickDoodle,
   SunDoodle,
   ScribbleDoodle,
   StarDoodle,
   BrushDoodle,
   PaletteDoodle,
-  NickDoodle,
 } from '@davinci-opensource/shared/ui';
+import type { ToastType, ToastProps } from '@davinci-opensource/shared/ui';
 
 // 버튼 사용 예시
 <CommonBtn
@@ -92,6 +97,14 @@ import {
 >
   <Input value={nickname} onChange={setNickname} placeholder="닉네임" />
 </BaseModal>
+
+// 토스트 사용 예시
+<Toast
+  message="성공적으로 저장되었습니다."
+  type="success"
+  onClose={() => setShowToast(false)}
+  duration={3000}
+/>
 ```
 
 #### Tailwind 설정
@@ -154,12 +167,16 @@ pnpm build-storybook
 | `Input` | 텍스트 입력 필드 |
 | `Title` | 손글씨 스타일 타이틀 |
 | `DecorateTitle` | 물결 장식 라인 |
+| `Toast` | 토스트 알림 (success, error, info) |
+| `JudyDoodle` | 토끼 캐릭터 SVG 장식 |
+| `LionDoodle` | 사자 캐릭터 SVG 장식 |
+| `BearDoodle` | 곰 캐릭터 SVG 장식 |
+| `NickDoodle` | 여우 캐릭터 SVG 장식 |
 | `SunDoodle` | 태양 SVG 장식 |
 | `ScribbleDoodle` | 낙서 SVG 장식 |
 | `StarDoodle` | 별 SVG 장식 |
 | `BrushDoodle` | 붓 SVG 장식 |
 | `PaletteDoodle` | 팔레트 SVG 장식 |
-| `NickDoodle` | 닉네임 SVG 장식 |
 
 ## 라이선스
 

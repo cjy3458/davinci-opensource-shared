@@ -1,5 +1,5 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import DecorateTitle from './DecorateTitle';
+import { DecorateTitle } from '..';
 
 const meta: Meta<typeof DecorateTitle> = {
   title: 'UI/DecorateTitle',

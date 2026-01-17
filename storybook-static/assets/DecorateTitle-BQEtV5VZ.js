@@ -1,1 +1,0 @@
-import{j as e}from"./jsx-runtime-D_zvdyIk.js";const t=()=>e.jsx("svg",{className:"w-full text-blue-400",fill:"none",viewBox:"0 0 400 12",children:e.jsx("path",{d:"M 5 6 Q 100 2, 200 6 T 395 6",stroke:"currentColor",strokeLinecap:"round",strokeWidth:4})});t.__docgenInfo={description:"",methods:[],displayName:"DecorateTitle"};export{t as D};

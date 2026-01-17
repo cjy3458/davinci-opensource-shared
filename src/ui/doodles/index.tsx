@@ -1,3 +1,119 @@
+export const JudyDoodle = () => (
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 137.93 205.12">
+    <g
+      fill="none"
+      stroke="#2f2f2f"
+      stroke-width="3"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+    >
+      <path
+        d="M34.84 125.24
+      C20 95 10 70 8 45
+      C7 30 9 15 18 12
+      C27 10 33 25 36 40
+      C45 75 47 105 48 112"
+      />
+
+      <path
+        d="M60.92 97.79
+      C59 104 59 110 60 116"
+      />
+
+      <path
+        d="M73.61 102.85
+      C69 107 68 112 69 116"
+      />
+
+      <path
+        d="M87.32 121.57
+      C95 80 88 45 100 20
+      C108 5 125 3 130 18
+      C135 35 130 70 120 95
+      C112 115 98 135 85 150"
+      />
+
+      <path
+        d="M24.92 137.72
+      C15 155 18 180 35 190
+      C55 202 85 195 98 175
+      C110 155 105 130 90 118"
+      />
+
+      <circle cx="45" cy="149" r="2" />
+      <circle cx="66" cy="150" r="2" />
+
+      <path
+        d="M48 167
+      L55 160
+      L70 175"
+      />
+    </g>
+  </svg>
+);
+
+export const LionDoodle = () => (
+  <svg
+    className="pointer-events-none absolute bottom-32 right-[10%] hidden h-36 w-36 rotate-6 text-orange-400/35 md:block"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    viewBox="0 0 100 100"
+  >
+    {/* 머리 */}
+    <path d="M25 40 C25 22, 40 12, 55 14 C72 16, 82 30, 78 45 C75 60, 55 65, 40 60 C30 56, 25 50, 25 40" />
+
+    {/* 눈 */}
+    <circle cx="45" cy="42" r="2" />
+    <circle cx="60" cy="42" r="2" />
+
+    {/* 코 */}
+    <path d="M52 45 L50 52" />
+
+    {/* 입 */}
+    <path d="M45 55 C50 58, 55 58, 60 55" />
+
+    {/* 몸통 */}
+    <path d="M50 65 L50 88" />
+
+    {/* 팔 */}
+    <path d="M50 70 L35 78" />
+    <path d="M50 70 L65 78" />
+
+    {/* 장식 낙서 */}
+    <path d="M20 30 Q15 25 18 20" />
+    <path d="M80 30 Q85 25 82 20" />
+  </svg>
+);
+
+export const BearDoodle = () => (
+  <svg
+    className="pointer-events-none absolute top-24 right-[15%] hidden h-32 w-32 rotate-6 text-yellow-400/40 md:block"
+    fill="none"
+    stroke="currentColor"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    strokeWidth="2"
+    viewBox="0 0 100 100"
+  >
+    {/* 머리 */}
+    <path d="M20 45 C20 25, 40 10, 60 15 C80 20, 85 40, 75 55 C65 70, 35 70, 25 55" />
+
+    {/* 눈 */}
+    <circle cx="40" cy="45" r="2" />
+    <circle cx="60" cy="45" r="2" />
+
+    {/* 입 */}
+    <path d="M42 58 C48 62, 52 62, 58 58" />
+
+    {/* 몸 */}
+    <path d="M50 70 L50 90" />
+    <path d="M35 78 L50 72 L65 78" />
+  </svg>
+);
+
 export const NickDoodle = () => (
   <svg
     className="pointer-events-none absolute top-60 left-[30%] hidden h-24 w-24 rotate-[-15deg] text-yellow-500/50 md:block"
