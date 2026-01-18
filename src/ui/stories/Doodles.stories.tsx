@@ -1,22 +1,21 @@
-import type { Meta, StoryObj } from '@storybook/react';
+import type { Meta, StoryObj } from "@storybook/react";
 import {
   JudyDoodle,
   LionDoodle,
-  BearDoodle,
   NickDoodle,
   SunDoodle,
   ScribbleDoodle,
   StarDoodle,
   BrushDoodle,
   PaletteDoodle,
-} from '..';
+} from "..";
 
 const meta: Meta = {
-  title: 'UI/Doodles',
+  title: "UI/Doodles",
   parameters: {
-    layout: 'fullscreen',
+    layout: "fullscreen",
   },
-  tags: ['autodocs'],
+  tags: ["autodocs"],
 };
 
 export default meta;
@@ -48,9 +47,6 @@ export const AllDoodles: Story = {
       </DoodleWrapper>
       <DoodleWrapper name="LionDoodle">
         <LionDoodle />
-      </DoodleWrapper>
-      <DoodleWrapper name="BearDoodle">
-        <BearDoodle />
       </DoodleWrapper>
       <DoodleWrapper name="NickDoodle">
         <NickDoodle />
@@ -86,14 +82,6 @@ export const Lion: Story = {
   render: () => (
     <DoodleWrapper name="LionDoodle">
       <LionDoodle />
-    </DoodleWrapper>
-  ),
-};
-
-export const Bear: Story = {
-  render: () => (
-    <DoodleWrapper name="BearDoodle">
-      <BearDoodle />
     </DoodleWrapper>
   ),
 };
@@ -146,13 +134,11 @@ export const Nick: Story = {
   ),
 };
 
-// Show doodles in their natural position
 export const InContext: Story = {
   render: () => (
     <div className="relative w-full h-screen bg-gradient-to-b from-blue-50 to-white overflow-hidden">
       <JudyDoodle />
       <LionDoodle />
-      <BearDoodle />
       <NickDoodle />
       <SunDoodle />
       <ScribbleDoodle />

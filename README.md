@@ -23,7 +23,7 @@ import {
   DRAWING_END_DELAY,
   ROUND_END_TIME,
   GAME_END_TIME,
-} from '@davinci-opensource/shared/constants';
+} from "@davinci-opensource/shared/constants";
 
 // Socket 이벤트 사용 예시
 socket.emit(SERVER_EVENTS.USER_JOIN, { roomId, nickname });
@@ -47,11 +47,11 @@ import type {
   PlayerResult,
   RoundResultEntry,
   GameResultEntry,
-} from '@davinci-opensource/shared/types';
+} from "@davinci-opensource/shared/types";
 
 const player: Player = {
-  socketId: 'abc123',
-  nickname: '플레이어1',
+  socketId: "abc123",
+  nickname: "플레이어1",
   isHost: true,
 };
 ```
@@ -70,7 +70,6 @@ import {
   Toast,
   JudyDoodle,
   LionDoodle,
-  BearDoodle,
   NickDoodle,
   SunDoodle,
   ScribbleDoodle,
@@ -114,8 +113,8 @@ import type { ToastType, ToastProps } from '@davinci-opensource/shared/ui';
 ```javascript
 module.exports = {
   content: [
-    './src/**/*.{js,ts,jsx,tsx}',
-    './node_modules/@davinci-opensource/shared/dist/**/*.{js,mjs}',
+    "./src/**/*.{js,ts,jsx,tsx}",
+    "./node_modules/@davinci-opensource/shared/dist/**/*.{js,mjs}",
   ],
   // ...
 };
@@ -160,23 +159,22 @@ pnpm build-storybook
 
 ### 컴포넌트 목록
 
-| 컴포넌트 | 설명 |
-|---------|------|
-| `CommonBtn` | 다양한 스타일의 버튼 (scribble, radius) |
-| `BaseModal` | 기본 모달 컴포넌트 |
-| `Input` | 텍스트 입력 필드 |
-| `Title` | 손글씨 스타일 타이틀 |
-| `DecorateTitle` | 물결 장식 라인 |
-| `Toast` | 토스트 알림 (success, error, info) |
-| `JudyDoodle` | 토끼 캐릭터 SVG 장식 |
-| `LionDoodle` | 사자 캐릭터 SVG 장식 |
-| `BearDoodle` | 곰 캐릭터 SVG 장식 |
-| `NickDoodle` | 여우 캐릭터 SVG 장식 |
-| `SunDoodle` | 태양 SVG 장식 |
-| `ScribbleDoodle` | 낙서 SVG 장식 |
-| `StarDoodle` | 별 SVG 장식 |
-| `BrushDoodle` | 붓 SVG 장식 |
-| `PaletteDoodle` | 팔레트 SVG 장식 |
+| 컴포넌트         | 설명                                    |
+| ---------------- | --------------------------------------- |
+| `CommonBtn`      | 다양한 스타일의 버튼 (scribble, radius) |
+| `BaseModal`      | 기본 모달 컴포넌트                      |
+| `Input`          | 텍스트 입력 필드                        |
+| `Title`          | 손글씨 스타일 타이틀                    |
+| `DecorateTitle`  | 물결 장식 라인                          |
+| `Toast`          | 토스트 알림 (success, error, info)      |
+| `JudyDoodle`     | 토끼 캐릭터 SVG 장식                    |
+| `LionDoodle`     | 사자 캐릭터 SVG 장식                    |
+| `NickDoodle`     | 여우 캐릭터 SVG 장식                    |
+| `SunDoodle`      | 태양 SVG 장식                           |
+| `ScribbleDoodle` | 낙서 SVG 장식                           |
+| `StarDoodle`     | 별 SVG 장식                             |
+| `BrushDoodle`    | 붓 SVG 장식                             |
+| `PaletteDoodle`  | 팔레트 SVG 장식                         |
 
 ## 라이선스
 
